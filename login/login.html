@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/yz.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/login/login.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <title>登录</title>
+</head>
+
+<body style="background: #E8FFE6;">
+    <div id="login">
+        <div class="container">
+            <div class="row login">
+                <div class="col-6">
+                    <h2>会员登录</h2>
+                </div>
+                <div class="col-6">
+                    <span style="float: right;" class="text-success" id="returnreg">立即注册</span>
+                </div>
+            </div>
+            <form class="form-login" id="login_form">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="请输入账号">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="password" name="pass" id="pass" class="form-control" placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="btn" id="img">身份验证</span>
+                        <div class="box">
+                            <img src="../images/login/cw.png" class="cuo">
+                            <span class="top-s">身份验证</span>
+                            <span class="top-x">拖动滑块，使图片角度为正</span>
+                            <div id="rotateWrap1">
+                                <div class="rotateverify-contaniner">
+                                    <div class="rotate-can-wrap">
+                                        <canvas class="rotateCan rotate-can" width="200" height="200"></canvas>
+                                        <div class="statusBg status-bg"></div>
+                                    </div>
+                                    <div class="control-wrap slideDragWrap">
+                                        <div class="control-tips">
+                                            <p class="c-tips-txt cTipsTxt">滑动将图片转正</p>
+                                        </div>
+                                        <div class="control-bor-wrap controlBorWrap"></div>
+                                        <div class="control-btn slideDragBtn">
+                                            <i class="control-btn-ico"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="log" class="btn bg-success text-white">登录</button>
+                    </div>
+                </div>
+                </br>
+            </form>
+        </div>
+    </div>
+
+    <!-- 注册 -->
+    <div id="regist">
+        <div class="container">
+            <div class="row login">
+                <div class="col-6">
+                    <h2>会员注册</h2>
+                </div>
+                <div class="col-6">
+                    <span style="float: right;" class="text-success" id="returnlog">返回登录</span>
+                </div>
+            </div>
+            <form class="form-login" id="regist_form">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" name="name" id="rename" required minlength="2" class="form-control"
+                            placeholder="请输入账号">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="password" name="pass" id="repass" required minlength="6" class="form-control"
+                            placeholder="请输入密码">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="password" name="repass" id="rerepass" required minlength="6" class="form-control"
+                            placeholder="请再次输入密码">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="tel" name="phone" maxlength="11" required id="phone" class="form-control"
+                            placeholder="请输入手机号码">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-8">
+                        <input type="text" class="form-control" maxlength="4" required placeholder="手机验证码" id="phonecode" name="code">
+                    </div>
+                    <div class="col-4"><span id="msg"></span></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="input-group mb-3 col">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-secondary ">
+                                <span class="glyphicon glyphicon-envelope text-white"></span>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="邮箱（选填）" id="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group mb-3 col">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-secondary ">
+                                <span class="glyphicon glyphicon-map-marker text-white"></span>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="地址（选填）" id="adress" name="adress">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="reg" class="btn bg-success text-white">注册</button>
+                    </div>
+                </div>
+                <br>
+            </form>
+
+        </div>
+    </div>
+    <script src="../js/regist.js"></script>
+    <script type="text/javascript">
+        // 加一个div全部 然后设置display：block；
+        $(function () {
+            //防止闪烁
+            $("#login").show();
+            // 点击按钮
+            $("#img").click(function () {
+                $(".box").css("display", "block");
+                $("body").css({
+                    "background": "rgba(255,255,0,0.1)"
+                });
+                $("#img").attr("disabled", true);
+            })
+            $(".cuo").click(function () {
+                $(".box").css("display", "none");
+                $("body").css("background", "#fff");
+                $("#img").attr("disabled", false);
+            })
+            //1
+            var myRotateVerify = new RotateVerify('#rotateWrap1', {
+                initText: '滑动将图片转正', //默认
+                slideImage: ['../images/login/1.png', '../images/login/2.png', '../images/login/4.png',
+                    '../images/login/5.png'
+                ], //arr  [imgsrc1,imgsrc2] 或者str 'imgsrc1'
+                slideAreaNum: 10, // 误差范围角度 +- 10(默认)
+                getSuccessState: function (res) { //验证通过 返回  true;
+                    setTimeout(function () {
+                        $(".box").css("display", "none");
+                        $("#img").attr("disabled", false);
+                        $("#img").addClass('success');
+                        $("#img").html('验证通过');
+                    }, 1000);
+
+                    $('#login').click(function () {
+                        console.log("登录成功");
+                        var name = $('#name').val();
+                        var passWord = $('#pass').val();
+                        $.post(
+                            "test.php", {
+                                name: name,
+                                passWord: passWord
+                            },
+                            function (status) {
+                                if (status == 1) {
+                                    window.open("{:url('@index/member/index')}",
+                                        '_self');
+                                }
+                            }
+                        );
+                    })
+                }
+            })
+            //注册与登录切换
+            $("#returnreg").click(function () {
+                $("#login").hide();
+                $("#regist").show();
+            });
+
+            $("#returnlog").click(function () {
+                $("#regist").hide();
+                $("#login").show();
+            });
+
+            
+        })
+    </script>
+    
+
+</body>
+
+</html>

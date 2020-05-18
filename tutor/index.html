@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学辅导</title>
+    <link rel="stylesheet" type="text/css" href="../css/tutor/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/tutor/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/tutor/ux-micro-icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <!-- bootstrap start -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap end -->
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <!-- video start -->
+    <link rel="stylesheet" href="../node_modules/video.js/dist/video-js.min.css">
+    <script src="../node_modules/video.js/dist/video.min.js"></script>
+    <!-- video end -->
+</head>
+
+<body>
+    <div id="app">
+        <!-- header start -->
+        <div id="header">
+            <div class="m-indextopwrap f-pr">
+                <div class="m-indextopnav">
+                    <div class="g-flow">
+                        <div class="topnav f-pr f-cb">
+                            <div class="u-indexnavcatebtn">
+                                <a href="#" class="cbtn f-cb">
+                                    <div class="ic f-fl">
+                                    </div>
+                                    <span class="qb f-fl f-f0">小学辅导</span>
+                                </a>
+                            </div>
+                            <div class="u-indexnavcatedialog f-pa" id="j-nav-indexcatedialog">
+                                <div class="f-fl cateleft f-pa">
+                                    <div class="catebg f-pa">
+                                    </div>
+                                    <div class="items f-pa">
+                                        <div class="item">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">一年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">二年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">三年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">四年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">五年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="item last">
+                                            <div class="curbg">
+                                            </div>
+                                            <div class="inn">
+                                                <p>
+                                                    <a href="#" class="f-f0 first">六年级</a>
+                                                    <a href="#" class="second">语文</a>
+                                                    <a href="#" class="second">数学</a>
+                                                    <a href="#" class="second">英语</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cateright f-pa f-cb">
+                                    <a class="close f-pa j-close" onclick="$('.rwrap').hide();"></a>
+                                    <div class="f-pr rwrap f-cb cur">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#video" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线练习</a>
+                                            </div>
+                                            <a href="#paper" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                    <div class="f-pr rwrap f-cb">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                    <div class="f-pr rwrap f-cb">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                    <div class="f-pr rwrap f-cb">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                    <div class="f-pr rwrap f-cb">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                    <div class="f-pr rwrap f-cb last">
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                        <div class="rwrap-left f-cb">
+                                            <div class="top-rec-box f-cb">
+                                                <a class="top-rec f-fl" href="#">在线视频</a>
+                                            </div>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题1</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题2</a>
+                                            <a href="#" class="f-f0 first cat2 tit f-fl">专题3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mainnav f-cb j-navFind">
+                                <a class="nitem f-f0" href="#" target="_self">小升初</a>
+                                <a class="nitem f-f0" href="#">本地校园</a>
+                                <a class="nitem f-f0" href="#">教育资讯</a>
+                                <a class="nitem f-f0" href="#">学习助手</a>
+                            </div>
+                            <div class="search off f-cb">
+                                <div class="box f-cb">
+                                    <input type="text" maxlength="30" placeholder="章节搜索" class="chapter">
+                                </div>
+                                <div class="submit f-hide f-pa" id="select"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="m-slide-container">
+                <div>
+                    <div class="m-slide f-pr">
+                        <div class="f-pr m-slide-wrap" id="j-slidewrap">
+                            <div class="slide" id="j-slide" href="#">
+                                <ul>
+                                    <li><a href=""><img
+                                                src="../images/tutor/22f32255-a49c-4db1-a93b-8f3a508b0ed6.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img src="../images/tutor/8A52811B4B0D8869DD974FE5075EA597.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img
+                                                src="../images/tutor/8e164ab4-4f74-4445-aca6-321b67dcf7f5.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img
+                                                src="../images/tutor/a336d02e-7a42-47b0-8631-9034c9471c71.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img
+                                                src="../images/tutor/bc4f08ee-aa9c-4d49-a14a-5cbf3d59f80f.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img
+                                                src="../images/tutor/e4954183-4f72-45f4-ac45-e6ebb2dfc275.jpg"></a>
+                                    </li>
+                                    <li><a href=""><img src="../images/tutor/01C52854E262EAD6FD4AC98B74B45B96.jpg"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="lbtn prev"></a>
+                            <a class="rbtn next"></a>
+                            <div class="u-slidepg">
+                                <ul class="f-cb f-pr f-ib pbox">
+                                    <li class="on">1</li>
+                                    <li class="">2</li>
+                                    <li class="">3</li>
+                                    <li class="">4</li>
+                                    <li class="">5</li>
+                                    <li class="">6</li>
+                                    <li class="">7</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="lbevel f-pa">
+                        </div>
+                        <div class="rbevel f-pa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- box start -->
+        <div class="container box">
+            <div class="row top">
+                <img src="../images/tutor/top.jpeg" class="img-fluid">
+            </div>
+            <div class="row like">
+                <div class="col-2" style="padding-left: 0px;">
+                    <img src="../images/tutor/guess.gif" class="img-fluid">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col">
+                            <div class="change"><span class="glyphicon glyphicon-refresh text-info">换一批</span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-dark">Some example text. Some example text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page" style="padding-left: 0px;" v-show="p_status" id="paper">
+                <div class="row">
+                    <div class="col text-center">
+                        <ul>
+                            <li>1.title</li>
+                            <li>A.dapdjqp</li>
+                            <li>B.djapdo</li>
+                            <li>C.jdpadj</li>
+                            <li>D.jdpadj</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary">交卷</button>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <!-- box end -->
+    </div>
+
+    <!-- footer start -->
+    <div class="bottom">
+        <div class="footer">
+            <div class="w1200">
+                <div class="footer_top">
+                    <ul>
+                        <li>专注服务于电商领域</li>
+                        <li>7×8小时售后支持</li>
+                        <li>一对一专属会员经理</li>
+                        <li>285万用户诚意推荐</li>
+                    </ul>
+                </div>
+                <div class="footer_tel">
+                    <div class="tel">
+                        来电咨询<br>
+                        400-xxx-xxxx
+                    </div>
+                    <ul>
+                        <li>全方位的购买咨询</li>|
+                        <li>精准的产品推荐</li>|
+                        <li>专业支持的售后咨询</li>|
+                        <li>电商业务开展咨询</li>
+                    </ul>
+                </div>
+                <div class="footer_down">
+                    <div class="left">
+                        <h3>电商系统及行业方案</h3>
+                        <p>
+                            <a href="#">云微商城</a>
+                            <a href="#">云订货</a>
+                            <a href="#">云ERP</a>
+                            <a href="#">Shop</a>
+                            <a href="#">分销王</a>
+                            <a href="#">会员通</a>
+                            <a href="#">货店通</a>
+                            <a href="#">情报魔方</a>
+                            <a href="#">淘打</a>
+                            <a href="#">Shopex</a>
+                            <a href="#">mall</a>
+                            <a href="#">Shop APP</a>
+                        </p>
+                    </div>
+                    <div class="flink">
+                        <h3>友情链接</h3>
+                        <p>
+                            <a href="#">使用帮助</a>
+                            <a href="#">服务社区</a>
+                            <a href="#">经典案例</a>
+                            <a href="#">商城官网</a>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <img src="../images/index/footer/dy_ewm.png" alt="" />
+                                <h3>云订阅号</h3>
+                            </li>
+                            <li>
+                                <img src="../images/index/footer/dy_ewm.png" alt="" />
+                                <h3>云服务号</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_copyright">
+                    <p>软件企业编号© 2003-2017 Shop,Inc.All rights reserved.</p>
+                    <p class="beian"><a href="#"><img src="../images/index/footer/ba.png" />&nbsp;沪公网安备 xxxxxxxxxx号</a>
+                        <a href="#"><img src="../images/index/footer/gs.gif" />&nbsp;上海工商</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    <script src="../js/tutor/index.js"></script>
+    <script type="text/javascript">
+        jQuery("#j-nav-indexcatedialog").slide({
+            titCell: ".item", //鼠标触发对象
+            targetCell: ".rwrap", //titCell里面包含的要显示/消失的对象
+            delayTime: 100, //效果时间
+            defaultPlay: false,
+            triggerTime: 0, //鼠标延迟触发时间（默认150）
+            returnDefault: true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+        });
+        jQuery("#j-slidewrap").slide({
+            titCell: ".u-slidepg ul li",
+            mainCell: ".slide ul",
+            autoPlay: true,
+            delayTime: 0,
+        });
+    </script>
+
+</body>
+
+</html>

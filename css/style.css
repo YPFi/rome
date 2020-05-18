@@ -1,0 +1,163 @@
+@charset "utf-8";
+.clear-padding {
+    padding: 0;
+}
+
+.clear-padding-row {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.clear-padding-col {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* 单行溢出隐藏 */
+.overflow{
+	white-space: nowrap;      /*超出的空白区域不换行*/
+    overflow: hidden;         /*超出隐藏*/
+    text-overflow: ellipsis;  /*文本超出显示省略号*/
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 460px;
+}
+/* 关于我们模块 */
+.box-Us {
+    width: 100%;
+    background-color: #f3f6fa;
+	font-size: 1.2rem;
+
+}
+/* 业务模块 */
+.box-service {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    font-size: 1rem;
+}
+.service-shadow{
+	transition-duration: 0.5s;
+    transition-property: transform;
+}
+.service-shadow:hover {
+    -moz-box-shadow: 0px 0px 8px #d6d6d6;
+    -webkit-box-shadow: 0px 0px 8px #d6d6d6;
+	box-shadow: 0px 0px 8px #d6d6d6;
+	transform: translateY(-6px);
+}
+/* 案例模块 */
+.box-project {
+    width: 100%;
+    height: auto;
+    background-color: #4698ff;
+    color: white;
+    font-size: 1rem;
+}
+.clearfix::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.foot{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+    0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgba(0, 0, 0, 0.2),
+    0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+.slide-item-body ul li{
+    width: 30%;
+    float: left;
+    margin-left: 1.3rem;
+    display: block;
+}
+
+.next {
+	position: absolute;
+	
+    z-index: 10;
+    padding-top: 30%;
+	cursor: pointer;
+	-moz-background-size: 60px;
+	-webkit-background-size: 60px;
+	background-size: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	right: auto;
+	left: -157px;
+	height: 60px;
+	width: 60px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+.next-bg {
+	background-image: url("../images/index/btn-fl1.png");
+}
+.next:hover {
+	background-image: url("../images/index/btn-fl2.png");
+}
+.prev {
+	position: absolute;
+	z-index: 10;
+    cursor: pointer;
+    padding-top: 30%;
+	-moz-background-size: 60px;
+	-webkit-background-size: 60px;
+	background-size: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	right: -179px;
+	height: 60px;
+	width: 60px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.prev-bg {
+	background-image: url("../images/index/btn-fr1.png");
+}
+.prev-bg:hover {
+	background-image: url("../images/index/btn-fr2.png");
+}
+/* 反馈模块 */
+.box-question{
+	width: 100%;
+	height: auto;
+    background-color: #f3f6fa;
+    font-size: 1rem;
+}
+.question a{
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.question div{
+	text-indent:2rem;
+	font-size: 1.1rem;
+}
+.light-blue{
+	background: #4FA1FF;
+}
+.dark-blue{
+	background: #285180;
+}
+.light-blue:hover{
+	background: rgb(67, 139, 221);
+}
+.dark-blue:hover{
+	background: #183658;
+}

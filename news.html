@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/head.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <header class="header">
+        <div class="container clearfix">
+            <div class="fl left">
+                <a href="javascript:void(0)"><img src="images/index/logo.png" alt="" class="img1" /></a>
+                <a href="javascript:void(0)"><img src="images/index/logo2.jpg" alt="" class="img2" /></a>
+            </div>
+            <div class="fr nav">
+                <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">
+                            教育资讯
+                        </a>
+                        <div class="dropdown_menu">
+                            <a href="#">小学</a>
+                            <a href="#">初中</a>
+                            <a href="#">高中</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">课程辅导</a>
+                        <div class="dropdown_menu">
+                            <a href="#">小学辅导</a>
+                            <a href="#">初中辅导</a>
+                            <a href="#">高中辅导</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">实时教育</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">联系合作</a>
+                    </li>
+                    <li>
+                        <a href="./login/login.html">注册/登录</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" id="navToggle">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <!--移动端的导航-->
+    <div class="m_nav">
+        <div class="top clearfix">
+            <img src="images/index/closed.png" alt="" class="closed" />
+        </div>
+        <div class="logo">
+            <img src="images/index/logo2.jpg" alt="" />
+        </div>
+        <ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="active">
+                <a href="./index.html">首页</a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    教育资讯
+                </a>
+                <div class="dropdown_menu">
+                    <a href="#">小学</a>
+                    <a href="#">初中</a>
+                    <a href="#">高中</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">课程辅导</a>
+                <div class="dropdown_menu">
+                    <a href="#">小学辅导</a>
+                    <a href="#">初中辅导</a>
+                    <a href="#">高中辅导</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0)">实时教育</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">关于我们</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">联系合作</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">注册/登录</a>
+            </li>
+        </ul>
+    </div>
+    <!--banner start-->
+    <div id="banner" class="carousel slide banner" data-ride="carousel">
+
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#banner" data-slide-to="0" class="active"></li>
+            <li data-target="#banner" data-slide-to="1"></li>
+            <li data-target="#banner" data-slide-to="2"></li>
+        </ul>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+                <div class="carousel-caption">
+                    <h3>第一张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+                <div class="carousel-caption">
+                    <h3>第二张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+                <div class="carousel-caption">
+                    <h3>第三张图片描述标题</h3>
+                    <p>描述文字!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- 新闻内容部分 -->
+    <div class="box clear-padding-row container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row news-bar">
+                        <div class="col-8">
+                            <div class="squared"></div>
+                            <div class="bar-title">行业动态</div>
+                        </div>
+                        <div class="col-4 text-right">
+                            <span class="glyphicon glyphicon-tags key-tag"></span>&nbsp;
+                            <a href="#">中学</a>
+                            &nbsp;<a href="#">家长</a>
+                            &nbsp;<a href="#">中考动态</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><span class="left">上一篇</span></a>
+                            <a href="#"><span class="right">下一篇</span></a>
+                        </div>
+                    </div>
+                    <div class="row new-title">
+                        <div class="col text-center">
+                            新闻标题
+                            <p class="text-secondary">
+                                时间：2020-5-8 &emsp;
+                                阅读次数：100 &emsp;
+                                作者：勤藤教育
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row new-detail">
+                        <div class="col">
+                            孩子的小学时期所养成的教育是习惯培养的最佳时期，初中的孩子，学习心态决定一切。不管小学时期成绩如何的好，初中阶段心态的不稳定将直接导致求学之路的失败。尤其在初一这个过渡的时期，原来学习好的心态不好败下阵来，成绩不好心态很好成为后起之秀，为什么会这样呢？今天，勤藤教育给大家提供一些在进入初中后需要注意的问题。
+                            一，学会制定学习计划，有计划的学习。
+                            一进入到初中，同学们都会惊奇地发现，小学时期老师们事事关心，面面俱到；相反，初中老师管的很松，作业留的不多，或者即使很多，也不检查，上自习也没有老师看着，随便说话，也没有老师管（单凭这一点，应该引起家长足够的重视，因为这一点足以警示你的孩子小学成绩很好，初中成绩直线下滑的主要原因，从小培养孩子自主学习的心态尤为重要，尤其是学历不太高的孩子家长，孩子小学时期你陪读陪写陪练，进入中学后会搞得你措手不及。）
+                            （1）应该培养孩子自觉地学习。告诉孩子不能放任自流，应该要自觉地学习和复习所学习的内容。逐步养成孩子能够自觉学习的好习惯，就算没有爸爸妈妈在身边也能保质高效的完成学习任务，这样才能事半功倍。
+                            （2）让孩子要有计划性。在学习的过程中，总会有自己学得好的部分，学得不好的部分，要有计划地分配时间，避免片刻也很重要。同时让孩子最好能够早点找一本中考考纲，了解将来考试的范围和难度，好对症下药，有所侧重。
+                            二，切忌学习的思想不能有丝毫的松懈。
+                            万事开头难。相当一部分孩子，进入初中后，以为考入中学，甚至考入实验班，就万事大吉了。休息一段时间，然后在努力，这就大错特错了！等进入中考的时候，有的是实验班的同学成绩还不如普通班的。
+                            初中三年，眨眼即过，而且初一，初二，初三环环相扣，初一的只是比较简单，但如果基础打得不牢，不能开拓思维，超前学习，到了初二学习几何证明，初三学习二次函数就会感觉很吃力，尤其是到初二，初三还要学习两门新的学科~物理和化学。三门课放在一起，很多初一数学基础不好的同学，就很难赶上了。所以，孩子跨入中学大门开始，要有长远的计划，步步为营，时时占得先机。
+                            三，逐步让自己养成认真，踏实的学习习惯。
+                            （1）似懂非懂。随着初中知识点难度的提高，孩子如果再抱着这种蜻蜓点水式的学习方式，就不可能完全消化老师所讲的题目。有的学生看似什么都会，就是考试不会。一旦养成这样的习惯，就很难改正，而且这样的同学还觉得自己其实很聪明，老师讲的都会，只是偶尔马虎而已，结果考试成绩总是一塌糊涂。
+                            （2）在完全会做的情况下，孩子经常做错题。在小学阶段，这种马虎不会影响到自己在班级里的排名。而到了重点中学，尤其是实验班，竞争很激烈，大家都很聪明。这个时候比的就是谁更努力，更踏实，更少犯错误。这也是很多特别聪明但很毛躁的同学在小学成绩很好，而到了初中后，成绩越来越差的原因。
+                            四，“不懂就问”未必就是个好习惯。
+
+                            不会当然要向老师，同学，家长请教，表面上看是对的。但大家一定要明白一点：一个题目，一个技巧，只有自己亲自弄懂，独立求解，才是真的明白。向他人请教得到的知识，我们只是得到了知识本身，但并不一定了解如何运用，下次遇到类似题目，还是很难解得出。所以，勤藤教育还是希望家长要明白：中学的孩子面对一道难题，首先要刻苦的独立思考，半个小时或者一个小时，争取自己解答出来，这是最好的，最有收获的。但如果实在解不出在向别人请教，孩子的心态就会非常珍惜这次机会，请教时很注意别人是怎样的思考，运用技巧的，而不是仅仅只关心答案。
+                            五，让孩子保持良好的，积极的心态。
+                            这一点是最重要的。进入初中后，同学们或多或少会遇到一些问题。成绩不管怎么努力也是停滞不前，或是与同学，老师之间有些小矛盾等等。如果处理不好，会严重影响学习成绩。有些同学甚至会因此而一蹶不振。遇到问题，首先要让孩子自己学会自我调节，多从自己方面和积极的方面思考问题，有一些孩子为了自尊心，逃避问题，不愿意把问题拿出来与他人沟通，这样做并不能保护一个人的自尊心。要想保护自尊心，只有把问题解决了，成绩提高了才是硬道理，有了成绩才会真正获得认可和尊重。
+                            初一是一道“坎”，再难也请坚持！如果不够悲伤，就无法飞翔，可没有梦想，何必远方……
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="nav-hot">
+                        <div class="hot-top">
+                            <div style="height: 10px;"></div>
+                            <div class="squared2"></div>
+                            &nbsp;热点资讯&nbsp;<span class="glyphicon glyphicon-fire text-danger"></span>
+                        </div>
+                        <div class="hot-ul">
+                            <ul>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><span style="color: red;">*</span>&nbsp;教育是习惯培养的最佳时期</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-new">
+                        <div class="hot-top">
+                            <div style="height: 10px;"></div>
+                            <div class="squared2"></div>&nbsp;最新资讯
+                            &nbsp;<span class="glyphicon glyphicon-time text-warning"></span>
+                        </div>
+                        <div class="new-ul">
+                            <ul>
+                                <li><a href="#"><img src="./images/index/project01.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project02.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project01.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project02.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project01.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project02.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project01.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                                <li><a href="#"><img src="./images/index/project02.jpg">&nbsp;教育是习惯培养的最佳时期</a></li>
+                            </ul>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <div class="bottom">
+            <div class="footer">
+                <div class="w1200">
+                    <div class="footer_top">
+                        <ul>
+                            <li>专注服务于电商领域</li>
+                            <li>7×8小时售后支持</li>
+                            <li>一对一专属会员经理</li>
+                            <li>285万用户诚意推荐</li>
+                        </ul>
+                    </div>
+                    <div class="footer_tel">
+                        <div class="tel">
+                            来电咨询<br>
+                            400-xxx-xxxx
+                        </div>
+                        <ul>
+                            <li>全方位的购买咨询</li>|
+                            <li>精准的产品推荐</li>|
+                            <li>专业支持的售后咨询</li>|
+                            <li>电商业务开展咨询</li>
+                        </ul>
+                    </div>
+                    <div class="footer_down">
+                        <div class="left">
+                            <h3>电商系统及行业方案</h3>
+                            <p>
+                                <a href="#">云微商城</a>
+                                <a href="#">云订货</a>
+                                <a href="#">云ERP</a>
+                                <a href="#">Shop</a>
+                                <a href="#">分销王</a>
+                                <a href="#">会员通</a>
+                                <a href="#">货店通</a>
+                                <a href="#">情报魔方</a>
+                                <a href="#">淘打</a>
+                                <a href="#">Shopex</a>
+                                <a href="#">mall</a>
+                                <a href="#">Shop APP</a>
+                            </p>
+                        </div>
+                        <div class="flink">
+                            <h3>友情链接</h3>
+                            <p>
+                                <a href="#">使用帮助</a>
+                                <a href="#">服务社区</a>
+                                <a href="#">经典案例</a>
+                                <a href="#">商城官网</a>
+                            </p>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <img src="./images/index/footer/dy_ewm.png" alt="" />
+                                    <h3>云订阅号</h3>
+                                </li>
+                                <li>
+                                    <img src="./images/index/footer/dy_ewm.png" alt="" />
+                                    <h3>云服务号</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_copyright">
+                        <p>软件企业编号© 2003-2017 Shop,Inc.All rights reserved.</p>
+                        <p class="beian"><a href="#"><img src="./images/index/footer/ba.png" />&nbsp;沪公网安备
+                                xxxxxxxxxx号</a> <a href="#"><img src="./images/index/footer/gs.gif" />&nbsp;上海工商</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+.news-bar {
+    margin-top: 40px;
+    height: 36px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+}
+
+.squared {
+    float: left;
+    width: 5px;
+    height: 30px;
+    margin-left: -15px;
+    background-color: rgb(0, 51, 102);
+}
+
+.squared2 {
+    float: left;
+    width: 5px;
+    height: 30px;
+    background-color: rgb(0, 51, 102);
+}
+
+.bar-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(0, 51, 102);
+}
+
+.new-title {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    height: 100px;
+}
+
+.new-title p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.key-tag {
+    font-size: 0.9rem;
+}
+
+.nav-hot {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+
+.nav-hot:hover {
+    box-shadow: 0px 2px 3px #888888;
+    -moz-box-shadow: 0px 2px 3px #888888;
+    -webkit-box-shadow: 0px 2px 3px #888888;
+    transform: translateY(-5px);
+}
+
+.hot-top {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: rgb(0, 51, 102);
+}
+
+.hot-ul {
+    width: 95%;
+}
+
+.hot-ul ul li {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-indent: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(77, 77, 77);
+}
+
+.hot-ul ul:last-child{
+    padding-bottom: 10px;
+}
+.nav-new{
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    margin-left: 10px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+.nav-new:hover {
+    box-shadow: 0px 2px 3px #888888;
+    -moz-box-shadow: 0px 2px 3px #888888;
+    -webkit-box-shadow: 0px 2px 3px #888888;
+    transform: translateY(-5px);
+}
+.new-ul {
+    width: 96%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.new-ul ul li {
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-indent: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(77, 77, 77);
+}
+.new-ul ul li img{
+    width: 60px;
+    height: 40px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 51, 102); 
+}
+.left{
+    float: left;
+    text-align: left;
+}
+.right{
+    float: right;
+    text-align: right;
+}

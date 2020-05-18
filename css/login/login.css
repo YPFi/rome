@@ -1,0 +1,114 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;font-size: 1rem;}
+#login{
+   position: absolute;
+   top:20%;
+   background: #D1FFCC;
+   left: 40%;
+   width: 360px;
+   display: none;
+   box-shadow: 2px 2px 5px #888888;
+}
+#regist{
+   position: absolute;
+   top:20%;
+   background: #D1FFCC;
+   width: 360px;
+   left: 40%;
+   display: none;
+}
+.yzm{
+   width:100%;
+   padding-top: 10px;
+   border: 1px solid #000;
+}
+.login{
+   margin-top: 10%;
+   line-height: 2rem;
+   border-bottom: 2px solid #000;
+}
+.form-login{
+   margin-top: 50px;
+}
+.yzbox{
+   display: none;
+}
+input[type = 'text']{
+   height: 36px;
+}
+input[type = 'password']{
+   height: 36px;
+   margin-top: 20px;
+}
+input[type = 'tel']{
+   height: 36px;
+   margin-top: 20px;
+}
+
+.code{
+   margin-top: 20px;
+   padding-left: 10px;
+   border-radius: 5px;
+   border: 0;
+}
+.btn{
+   width: 100%;
+   height: 46px;
+   text-align: center;
+   font-size: 1rem;
+   line-height: 1rem;
+   border: 1px solid #000;
+}
+.btn.success{
+   font-size: 1rem;
+   font-weight: bold;
+   color: green;
+}
+.box {
+   margin: 0 auto;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   height: 420px;
+   width: 300px;
+   margin-left: -150px;
+   margin-top: -210px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+   border-radius: 25px;
+   display: none;
+   z-index: 2;
+}
+
+.top-s {
+   font-size: 12px;
+   color: #ccc;
+   display: block;
+   text-align: center;
+   margin-left: 25px;
+   margin-top: 25px;
+   margin-bottom: 5px;
+}
+
+.top-x {
+   font-size: 18px;
+   color: black;
+   display: block;
+   text-align: center;
+   margin-bottom: 45px;
+}
+
+.cuo {
+   float: right;
+   margin-right: 10px;
+   margin-top: 5px;
+   cursor: pointer;
+}
+
+body{
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+

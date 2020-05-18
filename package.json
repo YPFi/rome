@@ -1,0 +1,28 @@
+{
+  "name": "rome",
+  "version": "1.0.0",
+  "description": "v1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "bootstrap": "^4.4.1",
+    "bootstrap-icons": "^1.0.0-alpha3",
+    "video.js": "^7.7.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YPFi/rome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YPFi/rome/issues"
+  },
+  "homepage": "https://github.com/YPFi/rome#readme"
+}
