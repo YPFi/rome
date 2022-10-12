@@ -7,7 +7,7 @@
     "jquery": "^3.5.0",
     "bootstrap": "^4.4.1",
     "bootstrap-icons": "^1.0.0-alpha3",
-    "video.js": "^7.7.5",
+    "video.js": "^7.20.3",
     "vue": "^2.6.11"
   },
   "devDependencies": {},
